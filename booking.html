@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  body{  
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(214, 236, 247, 0.849),rgb(3,96,1333)),url("./img/metro2.jpeg");
+  
+    background-attachment: fixed;
+    background-position: center; 
+  }
+  header{
+    width: 100%;
+    background-color: rgba(23,23,23,0.15);
+    padding: 20px;
+    position: absolute;
+    top: 0;
+}
+header .main{
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    margin: auto;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+header a{
+    text-decoration: none;
+    margin-right: 100px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.719);
+    font-family: tahoma;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.box h1{
+
+    color: rgb(250, 249, 249);
+    text-transform: uppercase;
+    font-weight: 700;
+    width: fit-content;
+    margin-bottom: unset;
+}
+  .booking-form-box{
+      max-width: 350px;
+      border: .5px solid #ced4da;
+      margin: 25% auto 0;
+  }
+  .radio-btn{
+      margin: 0 20px;
+
+  }
+  .radio-btn .btn{
+      margin: 20px 10px 20px 0;
+      box-shadow: none;
+  }
+  .radio-btn .btn::after{
+      content: '';
+      height: 15px;
+      width: 15px;
+      top: -2px;
+      left: -1px;
+      background-color: #fff;
+      position: relative;
+      display: inline-block;
+      border: 3px solid #fff;
+      visibility: visible;
+      border-radius: 50%;
+  }
+  .radio-btn .btn:checked ::after{
+        content: '';
+        background-color: #000;
+        transition: 0.5s;
+
+  }
+  .radio-btn span{
+      color: #fff;
+      margin-right: 5px;
+      font-size: 12px;
+
+  }
+  .booking-form{
+      padding: 0 20px 20px;
+  }
+  .booking-form label{
+      margin-bottom: 5px;
+      margin-top: 10px;
+      font-size: 12px;
+      color: #fff;
+  }
+  input::placeholder{
+      color: #fff !important;
+  }
+  .input-grp{
+      width: 151px;
+      display: inline-block;
+  }
+  .form-control{
+      font-size: 12px;
+      border-radius: 0;
+      color: #fff !important;
+      background: transparent !important;
+      box-shadow: none !important;
+  }
+  .select-date::-webkit-inner-spin-button,
+  .select-date::-webkit-outer-spin-button{
+      -webkit-appearance: none;
+      margin: 0;
+  }
+  .select-date::-webkit-calendar-picker-indicator{
+      background: transparent !important;
+  }
+  .travel{
+      width: 100%;
+      padding: 9px 0 !important;
+      font-size: 12px !important;
+      border: 1px solid #ced4da !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+
+  }
+  .travel:hover{
+      background: #fff !important;
+      color: #000 !important;
+      transition: 0.5s;
+  }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <title>Cochi_metro</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#">Logo</a>
+            <nav>
+                    <a href="index.html">Home</a>
+                    <a href="aboutme.html">About</a>
+                    <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <form class="box" action="login.html" method="POST">
+        <vertical>
+
+          <h1>
+            Ticket Booking
+          </h1>
+    <div class="booking-form-box">
+        
+        <div class="bookink-form">
+            <label >Ticket Booking </label>
+            <input type="text" class="form-control" placeholder="City">
+            <label >Travel From </label>
+            <input type="text" class="form-control" placeholder="Station">
+            <label >Travel To </label>
+            <input type="text" class="form-control" placeholder="Station">
+           
+            <div class="input-grp">
+                <label>Adults</label>
+                <input type="number" class="form-control" value="1">
+            </div>
+            <div class="input-grp">
+                <label>Children</label>
+                <input type="number" class="form-control" value="0">
+            </div>
+            <div class="input-grp">
+                <label>Children</label>
+                <input type="number" class="form-control" value="0">
+            </div>
+            <div class="input-grp">
+                <button type="button" class="btn btn-primary travel">Show</button>
+            </div>
+            
+
+          
+        </div>
+
+
+    </div>
+</form>
+    
+
+</body>
+</html>
